@@ -14,7 +14,9 @@ The player has a spare if she knocks down all 10 pins with the two roles of a fr
 
 If the player rolls a strike or spare in the 10th frame she can roll the additional balls for the bonus. But she can never roll more than 3 balls in the 10th frame. The additional rolls only count for the bonus- not for the regular frame count.
 
-10, 10, 10 in the 10th frame gives 30 points (10 points for the regular first strike and 20 points for the bonus) 1, 9, 10 in the 10th frame gives 20 points (10 points for the regular spare and 10 points for the bonus) Gutter Game
+10, 10, 10 in the 10th frame gives 30 points (10 points for the regular first strike and 20 points for the bonus) 1, 9, 10 in the 10th frame gives 20 points (10 points for the regular spare and 10 points for the bonus) 
+
+Gutter Game
 
 A Gutter Game is when the player never hits a pin (20 zero scores).
 
