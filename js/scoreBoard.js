@@ -1,0 +1,3 @@
+var ScoreBoard = function() {
+  
+}
