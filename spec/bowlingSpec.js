@@ -23,7 +23,9 @@ describe ("Bowling", function(){
     });
 
     it("knows that the turn is over if 10 pins have been knocked down", function(){
-
+      bowling.pinsKnockedDown(6)
+      bowling.pinsKnockedDown(2)
+      expect(bowling.isNextTurn).toEqual(true)
     });
 
   });
