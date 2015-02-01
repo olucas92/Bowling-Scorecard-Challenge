@@ -15,4 +15,17 @@ describe ("Bowling", function(){
 
   });
 
+  describe ("during the frame", function(){
+
+    it("knows how many pins have been knocked down", function(){
+      bowling.pinsKnockedDown(7)
+      expect(bowling.pinsLeft).toEqual(3)
+    });
+
+    it("knows that the turn is over if 10 pins have been knocked down", function(){
+
+    });
+
+  });
+
 });
