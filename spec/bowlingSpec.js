@@ -1,23 +1,14 @@
-describe("a roll", function() {
-  var roll;
+describe ("Bowling", function(){
 
-  it("should know how many pins have been knocked down", function(){
-    roll = new Roll();
-  });
+  var bowling;
 
-});
 
-describe("a game", function(){
-  var game;
+  describe ("by default", function(){
 
-});
+    it("starts off at a score of 0", function(){
+      expect(bowling.score)toEqual(0);
+    })
 
-describe("a frame", function(){
-  var frame;
-
-});
-
-describe("a scoreboard", function(){
-  var scoreboard;
+  })
 
 });
