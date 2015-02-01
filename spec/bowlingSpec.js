@@ -18,13 +18,13 @@ describe ("Bowling", function(){
   describe ("during the frame", function(){
 
     it("knows how many pins have been knocked down", function(){
-      bowling.pinsKnockedDown(7)
+      bowling.pinsHit(7)
       expect(bowling.pinsLeft).toEqual(3)
     });
 
     it("knows that the turn is over if 10 pins have been knocked down", function(){
-      bowling.pinsKnockedDown(6)
-      bowling.pinsKnockedDown(2)
+      bowling.pinsHit(6)
+      bowling.pinsHit(2)
       expect(bowling.isNextTurn()).toBe(true)
     });
 
