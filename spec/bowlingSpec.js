@@ -19,6 +19,10 @@ describe ("Bowling", function(){
       expect(bowling.pinsLeft).toEqual(10)
     });
 
+    it("knows that 0 balls have been bowled on initialize", function(){
+      expect(bowling.ballsThrown).toEqual(0)
+    });
+
   });
 
   describe ("during the frame", function(){
