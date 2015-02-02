@@ -32,9 +32,14 @@ describe ("Bowling", function(){
       expect(bowling.pinsLeft).toEqual(3)
     });
 
-    it("knows that the turn is over if 10 pins have been knocked down", function(){
+    it("knows that the turn is over if 2 balls have been thrown", function(){
       bowling.pinsHit(6)
       bowling.pinsHit(2)
+      expect(bowling.isNextTurn()).toBe(true)
+    });
+
+    it("knows that the turn is over if 10 pins have been hit", function(){
+      bowling.strike
       expect(bowling.isNextTurn()).toBe(true)
     });
 

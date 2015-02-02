@@ -5,3 +5,8 @@ var Bowling = function(){
   this.ballsThrown = 0
 
 };
+
+Bowling.prototype.pinsHit = function(number){
+  this.pinsLeft = this.pinsLeft - number;
+  this.ballsThrown += 1; 
+};
