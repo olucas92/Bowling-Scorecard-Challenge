@@ -60,14 +60,18 @@ describe ("Bowling", function(){
 
   describe ("adding the accumulated scores", function(){
 
-    it("shoule be able to add up scores over 2 frames", function(){
+    it("should be able to add up scores", function(){
       bowling.pinsHit(5)
       bowling.pinsHit(3)
-      bowling.nextTurn()
-      bowling.pinsHit(8)
-      bowling.pinsHit(1)
-      expect(bowling.accumulativeScore).toEqual(17)
+      bowling.addScore()
+      // bowling.nextTurn()
+      // bowling.pinsHit(8)
+      // bowling.pinsHit(1)
+      // bowling.addScore
+      expect(bowling.accumulativeScore).toEqual(8)
     });
+
+    it()
   });
 
 });

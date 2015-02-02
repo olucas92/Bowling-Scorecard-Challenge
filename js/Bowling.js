@@ -33,5 +33,5 @@ Bowling.prototype.nextTurn = function() {
 };
 
 Bowling.prototype.addScore = function(){
-  this.accumulativeScore += (this.startingPins - this.pinsLeft)
+  this.accumulativeScore += (this.startingPins-this.pinsLeft)
 };
