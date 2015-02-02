@@ -33,10 +33,15 @@ describe ("Bowling", function(){
     });
 
     it("knows that the turn is over if 2 balls have been thrown", function(){
-      bowling.pinsHit(6)
-      bowling.pinsHit(2)
+      bowling.ballsThrown(2)
       expect(bowling.isNextTurn()).toBe(true)
     });
+
+    it("knows that the turn is over if 2 balls have been thrown", function(){
+      bowling.pinsHit(2)
+      bowling.pnsHit(5)
+      expect(bowling.isNextTurn()).toBe(true)
+    });    
 
     it("knows that the turn is over if 10 pins have been hit", function(){
       bowling.strike
