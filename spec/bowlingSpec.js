@@ -71,7 +71,17 @@ describe ("Bowling", function(){
       expect(bowling.accumulativeScore).toEqual(8)
     });
 
-    it()
+    it("should be able to add up scores over 2 frames", function(){
+      bowling.pinsHit(6)
+      bowling.pinsHit(3)
+      bowling.addScore()
+      bowling.nextTurn()
+      bowling.pinsHit(2)
+      bowling.pinsHit(5)
+      bowling.addScore()
+      expect(bowling.accumulativeScore).toEqual(16)
+    });
+
   });
 
 });
