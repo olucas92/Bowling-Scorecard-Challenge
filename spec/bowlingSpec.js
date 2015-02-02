@@ -39,7 +39,7 @@ describe ("Bowling", function(){
 
     it("knows that the turn is over if 2 balls have been thrown", function(){
       bowling.pinsHit(2)
-      bowling.pnsHit(5)
+      bowling.pinsHit(5)
       expect(bowling.isNextTurn()).toBe(true)
     });    
 

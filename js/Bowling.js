@@ -2,6 +2,7 @@ var Bowling = function(){
   this.accumulativeScore = 0
   this.pinsLeft = 10
   this.ballsThrown = 0
+  this.startingPins = 10
 
 };
 
@@ -20,4 +21,8 @@ Bowling.prototype.isNextTurn = function() {
   else {
     return false
   };
+};
+
+Bowling.prototype.strike = function(){
+  this.pinsHit === 10
 };
