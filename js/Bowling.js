@@ -24,5 +24,5 @@ Bowling.prototype.isNextTurn = function() {
 };
 
 Bowling.prototype.strike = function(){
-  this.pinsHit === 10
+  this.pinsHit = 10
 };

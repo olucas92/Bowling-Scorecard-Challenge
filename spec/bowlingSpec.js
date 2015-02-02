@@ -44,10 +44,20 @@ describe ("Bowling", function(){
     });    
 
     it("knows that the turn is over if 10 pins have been hit", function(){
-      bowling.strike
+      bowling.pinsHit(10)
       expect(bowling.isNextTurn()).toBe(true)
     });
 
+  });
+
+  describe ("resetting after the frame", function(){
+
+    it("should reset pins left to 10 after each frame", function(){
+      bowling.pinsHit(10);
+      bowling.nextTurn
+      expect(bowling.pinsLeft).toEqual(10)
+    });
+    
   });
 
 });
