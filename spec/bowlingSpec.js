@@ -3,9 +3,7 @@ describe ("Bowling", function(){
   var bowling;
 
   beforeEach(function(){
-
     bowling = new Bowling();
-  
   });
 
 
@@ -32,10 +30,10 @@ describe ("Bowling", function(){
       expect(bowling.pinsLeft).toEqual(3)
     });
 
-    it("knows that the turn is over if 2 balls have been thrown", function(){
-      bowling.ballsThrown(2)
-      expect(bowling.isNextTurn()).toBe(true)
-    });
+    // it("knows that the turn is over if 2 balls have been thrown", function(){
+    //   bowling.ballsThrown(2)
+    //   expect(bowling.isNextTurn()).toBe(true)
+    // });
 
     it("knows that the turn is over if 2 balls have been thrown", function(){
       bowling.pinsHit(2)
@@ -54,10 +52,22 @@ describe ("Bowling", function(){
 
     it("should reset pins left to 10 after each frame", function(){
       bowling.pinsHit(10);
-      bowling.nextTurn
+      bowling.nextTurn()
       expect(bowling.pinsLeft).toEqual(10)
     });
     
+  });
+
+  describe ("adding the accumulated scores", function(){
+
+    it("shoule be able to add up scores over 2 frames", function(){
+      bowling.pinsHit(5)
+      bowling.pinsHit(3)
+      bowling.nextTurn()
+      bowling.pinsHit(8)
+      bowling.pinsHit(1)
+      expect(bowling.accumulativeScore).toEqual(17)
+    });
   });
 
 });
