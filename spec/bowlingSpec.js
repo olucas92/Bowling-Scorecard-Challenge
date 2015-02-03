@@ -82,6 +82,16 @@ describe ("Bowling", function(){
       expect(bowling.accumulativeScore).toEqual(16)
     });
 
+    it("should be able to add scores over 3 frames", function(){
+      bowling.pinsHit(10)
+      bowling.addScore
+      bowling.pinsHit(10)
+      bowling.addScore
+      bowling.pinsHit(10)
+      bowling.addScore
+      expect(bowling.accumulativeScore).toEqual(30)
+    });
+
   });
 
 });
